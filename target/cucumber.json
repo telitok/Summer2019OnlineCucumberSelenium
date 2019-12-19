@@ -1,0 +1,222 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "open login page and login as store manager",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 910855022,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1692423607,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logs in as store manager",
+            "match": {
+              "location": "LoginStepDefinitions.user_logs_in_as_store_manager()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-19T16:57:39.832Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1461894586,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Verify dashboard page",
+        "description": "",
+        "id": "smoke-test;verify-dashboard-page",
+        "after": [
+          {
+            "result": {
+              "duration": 157150206,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2109745064,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user verifies that \"Dashboard\" page subtitle is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard\"",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginStepDefinitions.user_verifies_that_page_subtitle_is_displayed(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke_test"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "open login page and login as store manager",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1224027310,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1918013927,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logs in as store manager",
+            "match": {
+              "location": "LoginStepDefinitions.user_logs_in_as_store_manager()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-19T16:57:46.192Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1026627815,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Verify Manage Dashboards page",
+        "description": "",
+        "id": "smoke-test;verify-manage-dashboards-page",
+        "after": [
+          {
+            "result": {
+              "duration": 172929740,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2490467176,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user navigates to \"Dashboards\" and \"Manage Dashboards\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboards\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Manage Dashboards\"",
+                  "offset": 35
+                }
+              ],
+              "location": "TopMenuStepDefinitions.user_navigates_to_and(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2598868961,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user verifies that \"All Manage Dashboards\" page subtitle is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"All Manage Dashboards\"",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginStepDefinitions.user_verifies_that_page_subtitle_is_displayed(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke_test"
+          }
+        ]
+      }
+    ],
+    "name": "Smoke test",
+    "description": "",
+    "id": "smoke-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SmokeTest.feature",
+    "tags": [
+      {
+        "name": "@smoke_test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
